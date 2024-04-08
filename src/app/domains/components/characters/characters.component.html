@@ -1,0 +1,25 @@
+
+<DIV class="characterheader">
+<h1 class="efectrick">PERSONAJES</h1>
+<H1 class="efectrick">RICK AND MORTY</H1>
+</DIV>
+<div class="pagination-controls">
+    <button (click)="emitChangePage(currentPage - 1)" [disabled]="currentPage === 1">Anterior</button>
+    <span>Página {{currentPage}}</span>
+    <button (click)="emitChangePage(currentPage + 1)">Siguiente</button>
+</div>
+
+
+<div class="characters-container">
+<div class="character_list-container " *ngFor="let character of characterList">
+    <div class="character-box" style="border: 1px solid; border-color: black ; ">
+        <h2>Name: {{character.name}}</h2>
+        <img class="imagecharacter" [src]="character.image"/>
+        <h3>Species: {{character.species}} </h3>
+        <h3>Status: {{character.status}}</h3>
+        <button [routerLink]="['/detail', character.id]">Detalles</button>
+    </div>
+
+</div>
+
+</div>

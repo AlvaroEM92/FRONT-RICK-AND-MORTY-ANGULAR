@@ -1,0 +1,139 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color:rgb(194, 248, 114);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @font-face {
+    font-family: 'Rick and Morty font';
+    src: url('./assets/get_schwifty.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Rick and Morty font';
+}
+
+  .navegador {
+    background-color: #333;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+.navegador-lista {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navegador-elemento {
+    float: left;
+}
+
+.navegador-elemento a {
+    display: block;
+    color: greenyellow;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navegador-elemento a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+footer.container-admin {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .admin-items {
+    width: 25%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .name-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .name-img p {
+    color: white;
+    font-weight: bold;
+    margin:0;
+  }
+  
+  .img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+    overflow: hidden;
+  }
+  
+  .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .links {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+    background-color: black;
+  }
+  
+  .links a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .links img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    filter: invert(1);
+  }
+  
+  .admin-items:hover .links {
+    transition: all ease 0.5s;
+    top: 0;
+    cursor: pointer;
+  }
+

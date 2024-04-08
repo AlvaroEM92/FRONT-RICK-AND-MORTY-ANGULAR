@@ -1,0 +1,12 @@
+
+<div class="container_character">
+    <app-characters  [characterList]="characters" 
+    [currentPage]="currentPage"
+    (changePage)="onChangePage($event)"></app-characters>
+</div>
+
+<div class="pagination-controls">
+    <button (click)="previousPage()" [disabled]="currentPage === 1">Anterior</button>
+    <span>Página {{currentPage}}</span>
+    <button (click)="nextPage()">Siguiente</button>
+  </div>
